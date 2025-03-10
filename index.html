@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro Utenti - Sportello Rifugiati</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Registro Utenti - Sportello Rifugiati</h1>
+    
+    <form id="userForm">
+      <div class="row">
+        <!-- Colonna 1 -->
+        <div class="col-md-6">
+          <label for="cognome">Cognome:</label>
+          <input type="text" id="cognome" class="form-control placeholder-toggle" placeholder="Inserisci il cognome" required>
+
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" class="form-control placeholder-toggle" placeholder="Inserisci il nome" required>
+
+          <label for="datanascita">Data di nascita:</label>
+          <input type="date" id="datanascita" class="form-control" required>
+
+          <label for="sesso">Sesso:</label>
+          <select id="sesso" class="form-select">
+            <option value="" hidden>Seleziona il sesso</option>
+            <option value="Maschio">Maschio</option>
+            <option value="Femmina">Femmina</option>
+            <option value="Altro">Altro</option>
+          </select>
+
+          <label for="nazionalita">Nazionalità:</label>
+          <select id="nazionalita" class="form-select">
+            <option value="" hidden>Seleziona la nazionalità</option>
+          </select>
+
+          <label for="asilo">Tipologia Asilo:</label>
+          <select id="asilo" class="form-select">
+            <option value="" hidden>Seleziona la tipologia di asilo</option>
+            <option value="Asilo">Asilo</option>
+            <option value="Protezione Sussidiaria">Protezione Sussidiaria</option>
+            <option value="Protezione Speciale">Protezione Speciale</option>
+            <option value="Protezione Temporanea">Protezione Temporanea</option>
+            <option value="Cure Mediche">Cure Mediche</option>
+            <option value="Passaporto">Passaporto</option>
+            <option value="Nessun documento">Nessun documento</option>
+            <option value="Richiedente Asilo">Richiedente Asilo</option>
+            <option value="Richiedente Asilo – Dublino">Richiedente Asilo – Dublino</option>
+            <option value="Richiedente Asilo – Ricorrente">Richiedente Asilo – Ricorrente</option>
+            <option value="Motivi di Lavoro">Motivi di Lavoro</option>
+            <option value="Motivi Familiari">Motivi Familiari</option>
+            <option value="Lungo Soggiornante UE">Lungo Soggiornante UE</option>
+            <option value="Carta di Soggiorno per Familiari di Cittadini UE">Carta di Soggiorno per Familiari di Cittadini UE</option>
+            <option value="Calamità naturali art. 20 c.1 TUI">Calamità naturali art. 20 c.1 TUI</option>
+            <option value="Casi Speciali regime transitorio">Casi Speciali regime transitorio</option>
+            <option value="Lavoro subordinato">Lavoro subordinato</option>
+          </select>
+      
+
+
+       <label for="comuneAsilo">Questura di richiesta asilo:</label>
+       <select id="comuneAsilo" class="form-select">
+         <option value="" hidden>Seleziona un comune</option>
+       </select>
+      </div>
+
+      
+        <!-- Colonna 2 -->
+        <div class="col-md-6">
+<label for="statusAbitativo">Condizione Abitativa</label>
+<select id="statusAbitativo" class="form-select">
+<option value="" hidden>Seleziona la condizione abitativa</option>
+            <option value="Residente">Residente</option>
+            <option value="Domicilio">Domiciliato</option>
+            <option value="Senza dimora">Senza dimora</option>
+            <option value="In struttura di accoglienza CAS">In struttura di accoglienza</option>
+            <option value="In struttura di accoglienza SAI">In struttura di accoglienza</option>
+</select>
+
+          <label for="telefono">Telefono:</label>
+          <input type="tel" id="telefono" class="form-control" placeholder="Inserisci il numero di telefono" required>  
+
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" class="form-control" placeholder="Inserisci l'indirizzo email" required>
+
+
+        
+          <label for="comuni">Comune di residenza:</label>
+          <select id="comuni" class="form-select">
+            <option value="" hidden>Seleziona un comune</option>
+          </select>
+
+
+
+          <label for="accoglienza">Servizio richiesto:</label>
+          <select id="accoglienza" class="form-select">
+            <option value="" hidden>Seleziona il servizio richiesto</option>
+            <option value="Accoglienza Sai/Cas">Accoglienza Sai/Cas</option>
+            <option value="Domanda di Asilo">Domanda di Asilo</option>
+            <option value="Info su percorso giuridico">Info su percorso giuridico</option>
+            <option value="PrenotaFacile">PrenotaFacile</option>
+            <option value="Altro">Altro</option>
+            <option value="Documento di viaggio">Documento di viaggio</option>
+            <option value="Patrocinio legale">Patrocinio legale</option>
+          </select>
+
+          <label for="vulnerabilita">Vulnerabilità:</label>
+          <select id="vulnerabilita" class="form-select">
+            <option value="" hidden>Seleziona la vulnerabilità</option>
+            <option value="Nessuna vulnerabilità">Nessuna vulnerabilità</option>
+            <option value="Donne in stato di gravidanza">Donne in stato di gravidanza</option>
+            <option value="Disabile">Disabile</option>
+            <option value="Persona affetta da gravi malattie o da disturbi mentali">Persona affetta da gravi malattie o da disturbi mentali</option>
+            <option value="Vittima di tratta degli esseri umani">Vittima di tratta degli esseri umani</option>
+            <option value="Persona che ha subito torture, stupri o altre forme gravi di violenza psicologica, fisica o sessuale">Persona che ha subito torture, stupri o altre forme gravi di violenza psicologica, fisica o sessuale</option>
+            <option value="Minore">Minore</option>
+            <option value="Minore straniero non accompagnato">Minore straniero non accompagnato</option>
+            <option value="Genitore singole con figli a carico">Genitore singole con figli a carico</option>
+            <option value="Anziano(over 65)">Anziano(over 65)</option>
+            <option value="Analfabeta">Analfabeta</option>
+            <option value="Sfruttamento lavorativo">Sfruttamento lavorativo</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary mt-3">Invia</button>
+    </form>
+  </div>
+
+  
+</body>
+</html>

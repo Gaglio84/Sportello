@@ -1,0 +1,18 @@
+
+
+
+
+
+
+/*LOGIN*/
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.536) , rgba(0, 0, 0, 0.512)) , url(img/IqGmXQqJYWzhadX-1600x900-noPad.jpg);
+    object-fit: cover;
+    /*background-repeat: no-repeat;*/
+   background-size: cover;
+}
+
+
+.card {--bs-card-bg: #9e202000;}
+
+

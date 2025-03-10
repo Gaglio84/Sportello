@@ -1,0 +1,93 @@
+body {
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(248, 245, 245, 0)), url("img/th.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 🌟 Contenitore del form */
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+/* 🌟 Titolo principale */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #eb10b4; /* Oro per maggiore visibilità */
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* 🌟 Intestazioni delle sezioni */
+h3 {
+    color: #ff2c2c; /* Rosso corallo */
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* 🌟 Card per il form */
+.card {
+    background: rgba(82, 30, 30, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(126, 50, 50);
+}
+
+/* 🌟 Etichette */
+label {
+    font-weight: bold;
+    color: #000000;   
+    border: none;
+     /* Nero per massimo contrasto */
+    font-size: 16px;
+    align-items: center;
+}
+
+
+
+/* 🌟 Campi di input e select */
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 🌟 Pulsante */
+button {
+    background-color:  #eb10b4;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #eb16b3;
+}
+
+/* 🌟 Media query per schermi piccoli */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
